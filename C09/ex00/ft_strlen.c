@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wozsertt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jcluzet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/01 10:04:49 by wozsertt          #+#    #+#             */
-/*   Updated: 2019/09/01 10:08:49 by wozsertt         ###   ########.fr       */
+/*   Created: 2019/09/04 14:17:17 by jcluzet           #+#    #+#             */
+/*   Updated: 2019/09/04 14:25:11 by jcluzet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
-
-int		main(void)
+int		ft_strlen(char *str)
 {
-	rush(5, 9);
-	return (0);
+	int count;
+
+	count = 0;
+	while (str[count])
+		count++;
+	return (count);
 }

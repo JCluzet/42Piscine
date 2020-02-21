@@ -21,17 +21,17 @@ void	pligne(int x)
 	i = 1;
 	if (i == 1)
 	{
-		ft_putchar('o');
+		ft_putchar('A');
 		i++;
 	}
 	while (i < x)
 	{
-		ft_putchar('-');
+		ft_putchar('B');
 		i++;
 	}
 	if (i == x)
 	{
-		ft_putchar('o');
+		ft_putchar('C');
 	}
 	write(1, "\n", 1);
 }
@@ -43,7 +43,7 @@ void	dligne(int x)
 	i = 1;
 	if (i == 1)
 	{
-		ft_putchar('|');
+		ft_putchar('B');
 		i++;
 	}
 	while (i < x)
@@ -53,7 +53,7 @@ void	dligne(int x)
 	}
 	if (i == x)
 	{
-		ft_putchar('|');
+		ft_putchar('B');
 		write(1, "\n", 1);
 	}
 }

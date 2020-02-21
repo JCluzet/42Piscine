@@ -1,19 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wozsertt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jcluzet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/01 10:04:49 by wozsertt          #+#    #+#             */
-/*   Updated: 2019/09/01 10:08:49 by wozsertt         ###   ########.fr       */
+/*   Created: 2019/09/04 14:25:56 by jcluzet           #+#    #+#             */
+/*   Updated: 2019/09/04 15:27:50 by jcluzet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
+#include <unistd.h>
 
-int		main(void)
+void	ft_putchar(char c)
 {
-	rush(5, 9);
-	return (0);
+	write(1, &c, 1);
+}
+
+void	ft_putstr(char *str)
+{
+	int count;
+
+	count = 0;
+	while (str[count])
+	{
+		ft_putchar(str[count]);
+		count++;
+	}
 }
